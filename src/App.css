@@ -21,5 +21,12 @@
 }
 
 .Social-icon {
+  opacity: .5;
   width: 25px;
+  transition: opacity .1s;
+  -webkit-transform: translateZ(0);
+}
+
+.Social-icon:hover {
+  opacity: .75;
 }
