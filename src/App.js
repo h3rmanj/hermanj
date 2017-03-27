@@ -19,7 +19,7 @@ class App extends Component {
           <a href="https://github.com/h3rmanj" target="_blank" className="Social-link">
             <img src={github} className="Social-icon" alt="github" />
           </a>
-          <a href="http://steamcommunity.com/id/the0hj/" target="_blank" className="Social-link">
+          <a href="http://steamcommunity.com/id/h3rmanj" target="_blank" className="Social-link">
             <img src={steam} className="Social-icon" alt="steam" />
           </a>
         </div>
