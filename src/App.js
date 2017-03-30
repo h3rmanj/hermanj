@@ -8,6 +8,7 @@ import soundcloud from './img/soundcloud.png';
 import youtube from './img/youtube.png';
 import github from './img/github.png';
 import play from './img/google-play.png';
+import stack from './img/stack-overflow.png';
 import steam from './img/steam.png';
 import esea from './img/esea.png';
 
@@ -47,6 +48,10 @@ class App extends Component
           name: 'play store',
           logo: play,
           link: 'https://play.google.com/store/apps/developer?id=Herman%20Inc.'
+      }, {
+          name: 'stack overflow',
+          logo: stack,
+          link: 'http://stackoverflow.com/users/1320997/h3rmanj'
       }];
 
       let gaming = [{
