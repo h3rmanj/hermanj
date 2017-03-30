@@ -1,27 +1,71 @@
 import React, { Component } from 'react';
 import './App.css';
-import facebook from './img/facebook-logo.png';
-import soundcloud from './img/soundcloud-logo.png';
-import github from './img/github-sign.png';
+import SocialCategory from './SocialCategory';
+import facebook from './img/facebook.png';
+import reddit from './img/reddit.png';
+import instagram from './img/instagram.png';
+import soundcloud from './img/soundcloud.png';
+import youtube from './img/youtube.png';
+import github from './img/github.png';
+import play from './img/google-play.png';
 import steam from './img/steam.png';
+import esea from './img/esea.png';
 
-class App extends Component {
-  render() {
+class App extends Component
+{
+  render ()
+  {
+      let social = [{
+          name: 'facebook',
+          logo: facebook,
+          link: 'https://facebook.com/hermanj'
+      }, {
+          name: 'reddit',
+          logo: reddit,
+          link: 'https://www.reddit.com/user/masculinusVaginus/'
+      }];
+
+      let media = [{
+          name: 'instagram',
+          logo: instagram,
+          link: 'https://www.instagram.com/h3rmanj/'
+      }, {
+          name: 'soundcloud',
+          logo: soundcloud,
+          link: 'https://soundcloud.com/herman-jensen'
+      }, {
+          name: 'youtube',
+          logo: youtube,
+          link: 'https://www.youtube.com/channel/UClrcitAuRfXmrSS_NYKE-4w'
+      }];
+
+      let developer = [{
+          name: 'github',
+          logo: github,
+          link: 'https://github.com/h3rmanj'
+      }, {
+          name: 'play store',
+          logo: play,
+          link: 'https://play.google.com/store/apps/developer?id=Herman%20Inc.'
+      }];
+
+      let gaming = [{
+          name: 'steam',
+          logo: steam,
+          link: 'http://steamcommunity.com/id/h3rmanj'
+      }, {
+          name: 'esea',
+          logo: esea,
+          link: 'https://play.esea.net/users/756185'
+      }];
+
     return (
       <div className="App">
         <div className="Social">
-          <a href="https://facebook.com/hermanj" target="_blank" className="Social-link">
-            <img src={facebook} className="Social-icon" alt="facebook" />
-          </a>
-          <a href="https://soundcloud.com/herman-jensen" target="_blank" className="Social-link">
-            <img src={soundcloud} className="Social-icon" alt="soundcloud" />
-          </a>
-          <a href="https://github.com/h3rmanj" target="_blank" className="Social-link">
-            <img src={github} className="Social-icon" alt="github" />
-          </a>
-          <a href="http://steamcommunity.com/id/h3rmanj" target="_blank" className="Social-link">
-            <img src={steam} className="Social-icon" alt="steam" />
-          </a>
+            <SocialCategory name="SOCIAL" links={social} />
+            <SocialCategory name="MEDIA" links={media} />
+            <SocialCategory name="DEVELOPING" links={developer} />
+            <SocialCategory name="GAMING" links={gaming} />
         </div>
       </div>
     );
