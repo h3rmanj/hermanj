@@ -16,15 +16,27 @@
     margin-bottom: 50px;
 }
 
+.SocialMobile {
+    margin: 100px auto;
+}
+
 .SocialCategory {
     display: inline-block;
     margin: 25px;
+}
+
+.SocialCategory.Mobile {
+    display: block;
 }
 
 .SocialCategory-name {
     opacity: 0.5;
     cursor: default;
     transition: opacity .25s;
+}
+
+.SocialCategory-name.Mobile {
+    opacity: 0.75;
 }
 
 .Social-links {
@@ -35,9 +47,18 @@
     transition: opacity .25s, bottom .25s;
 }
 
+.Social-links.Mobile {
+    bottom: 0;
+    opacity: 1;
+}
+
 .Social-link {
     display: block;
     margin: 5px;
+}
+
+.Social-link.Mobile {
+    display: inline-block;
 }
 
 .Social-icon {
@@ -57,5 +78,9 @@
 }
 
 .Social-icon:hover {
+    opacity: .75;
+}
+
+.Social-icon.Mobile {
     opacity: .75;
 }

@@ -6,15 +6,22 @@ class SocialCategory extends Component
     render()
     {
         return (
-            <div className="SocialCategory">
-                <div className="Social-links">
+            <div className={this.props.mobile ? "SocialCategory Mobile" : "SocialCategory"}>
+                {this.props.mobile ? (
+                    <span className="SocialCategory-name Mobile">
+                        {this.props.name}
+                    </span>
+                ) : null}
+                <div className={this.props.mobile ? "Social-links Mobile" : "Social-links"}>
                     {this.props.links.map(item => (
-                        <SocialLink key={item.name} item={item} />
+                        <SocialLink key={item.name} item={item} mobile={this.props.mobile} />
                     ))}
                 </div>
-                <span className="SocialCategory-name">
-                    {this.props.name}
-                </span>
+                {!this.props.mobile ? (
+                    <span className="SocialCategory-name">
+                        {this.props.name}
+                    </span>
+                ) : null}
             </div>
         );
     }
