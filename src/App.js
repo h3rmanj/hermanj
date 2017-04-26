@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import SocialCategory from './SocialCategory';
 import facebook from './img/facebook.png';
-import reddit from './img/reddit.png';
 import spotify from './img/spotify.png';
 import instagram from './img/instagram.png';
 import soundcloud from './img/soundcloud.png';
@@ -42,10 +41,6 @@ class App extends Component
             name: 'facebook',
             logo: facebook,
             link: 'https://facebook.com/hermanj'
-        }, {
-            name: 'reddit',
-            logo: reddit,
-            link: 'https://www.reddit.com/user/masculinusVaginus/'
         }, {
             name: 'spotify user',
             logo: spotify,
