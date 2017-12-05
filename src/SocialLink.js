@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class SocialLink extends Component
-{
-    render()
-    {
-        return (
-            <a href={this.props.item.link} target="_blank" className={this.props.mobile ? "Social-link Mobile" : "Social-link"}>
-                <img src={this.props.item.logo} className={this.props.mobile ? "Social-icon Mobile" : "Social-icon"} alt={this.props.item.name} />
-            </a>
-        );
-    }
-}
+export default ({item, mobile}) =>
+	<a
+		href={item.link}
+		target="_blank"
+		className={mobile ? "Social-link Mobile" : "Social-link"}>
 
-export default SocialLink;
+		<img
+			src={item.logo}
+			className={mobile ? "Social-icon Mobile" : "Social-icon"}
+			alt={item.name} />
+	</a>;
